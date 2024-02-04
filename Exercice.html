@@ -1,0 +1,265 @@
+ <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+   <div id="bonne année">
+        <span id="i">T</span>
+        <span id="i">H</span>
+        <span id="i">I</span>
+        <span id="i">O</span>
+        <span id="i">R</span><br>
+        <span id="i">V</span>
+        <span id="i">O</span>
+        <span id="i">U</span>
+        <span id="i">S</span><br>
+        <span id="i">S</span>
+        <span id="i">O</span>
+        <span id="i">U</span>
+        <span id="i">H</span>
+        <span id="i">A</span>
+        <span id="i">I</span>
+        <span id="i">T</span>
+        <span id="i">E</span>
+        <span id="i">S</span><br>
+        <span id="i">B</span>
+        <span id="i">O</span>
+        <span id="i">N</span>
+        <span id="i">N</span>
+        <span id="i">E</span><br>
+        <span id="i">A</span>
+        <span id="i">N</span>
+        <span id="i">N</span>
+        <span id="i">E</span>
+        <span id="i">E</span><br>
+        <span id="i">2</span>
+        <span id="i">0</span>
+        <span id="i">2</span>
+        <span id="i">4</span>
+        
+    
+        <div class="glowing">
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+        </div>
+
+        <div class="glowing">
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+        </div>
+
+        <div class="glowing">
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+        </div>
+
+        <div class="glowing">
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+        </div>
+
+        <div class="glowing">
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+        </div>
+
+        <div class="glowing">
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+        </div>
+
+        <div class="glowing">
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+        </div>
+
+        <div class="glowing">
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+        </div>
+
+        <div class="glowing">
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<style>
+    #i{ color: white;
+        font-size: 60px;
+        letter-spacing: 15px;
+        animation: bonneannée 1.2s linear infinite;
+    }
+
+    body{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;    
+    }
+   
+    #i{
+        animation: senegal 10s linear infinite;
+    }
+
+    @keyframes senegal {
+        0%{
+            color: orange;
+        }
+        10%{
+            color: #fabacc;
+        }
+        20%{
+            color: #abeeff;
+        }
+        30%{
+            color: #b2aeff;
+        } 
+        40%
+        {
+            color: #dac45d;
+        }
+        50%{
+            color: #fafa33;
+        }
+        60%{
+            color: #fadde3;
+        }
+        70%{
+            color: #bbf3;
+        }
+        80%{
+            color: #cdd;
+        }
+        90%{
+            color: #aaa3;
+        }
+        100%{
+            color: pink;
+        }
+    }
+
+    *{
+        margin:  0;
+        padding: 0;
+    }
+    
+    .glowing {
+        min-width: 750px;
+        height: 750px;
+        margin: -150px;
+        transform-origin: right;
+        animation: colorChange 5s linear infinite;
+    }
+
+    .glowing span {
+        position: absolute;
+        top: calc(80px * var(--i));
+        left: calc(80px * var(--i));
+        right: calc(80px * var(--i));
+        bottom: calc(80px * var(--i));
+    }
+
+    .glowing:nth-child(even) {
+        transform-origin: left;
+    }
+
+    .glowing span:before {
+        content: '';
+        position: absolute;
+        top: 0%;
+        left: -8px;
+        width: 15px;
+        height: 15px;
+        background: #f00;
+        border-radius: 50%;
+    }
+
+    .glowing span:nth-child(3n +1):before {
+        background: rgba(134, 255, 0,1);
+        box-shadow: 0 0 20px rgba(134, 255,0, 1),
+                    0 0 40px rgba(134, 255,0, 1),
+                    0 0 60px rgba(134, 255,0, 1),
+                    0 0 80px rgba(134, 255,0, 1),
+                    0 0 8px rgba(134, 255,0, .1);
+    }
+
+    .glowing span:nth-child(3n +2):before {
+        background: rgba(255, 214, 0,1);
+        box-shadow: 0 0 20px rgba(255, 214,0, 1),
+                    0 0 40px rgba(255, 214,0, 1),
+                    0 0 60px rgba(255, 214,0, 1),
+                    0 0 80px rgba(255, 214,0, 1),
+                    0 0 8px rgba(255, 214,0, .1);
+    }
+
+    .glowing span:nth-child(3n +3):before {
+        background: rgba(0, 226,255, 1);
+        box-shadow: 0 0 20px rgba(0, 226,255, 1),
+                    0 0 40px rgba(0, 226,255, 1),
+                    0 0 60px rgba(0, 226,255, 1),
+                    0 0 80px rgba(0, 226,255, 1),
+                    0 0 8px rgba(0, 226,255, .1);
+    }
+
+    .glowing span:nth-child(3n +1) {
+        animation: animate 10s alternate infinite ;
+    }
+
+    .glowing span:nth-child(3n +2){
+        animation: animate-reverse 3s alternate infinite ;
+    }
+
+    .glowing span:nth-child(3n +3){
+        animation: animate 8s alternate infinite ;
+    }
+
+    @keyframes animate {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes animate-reverse {
+        0%{
+            transform: rotate(360deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+
+    @keyframes colorChange  {
+        0%{
+            filter: hue-rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100%{
+            filter: hue-rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+</style>
